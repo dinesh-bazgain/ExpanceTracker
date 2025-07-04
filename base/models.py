@@ -15,7 +15,7 @@ class ExpenseIncome(models.Model):
     ]
     transcation_type = models.CharField(
         max_length=10,
-        choices=[transcation_choices]
+        choices=transcation_choices
     )
 
     tax = models.DecimalField(max_digits=10, decimal_places=2, default=0)
@@ -26,7 +26,7 @@ class ExpenseIncome(models.Model):
     ]
     tax_type = models.CharField(
         max_length=10,
-        choices=[tax_type_choices],
+        choices=tax_type_choices,
         default='flat'
     )
 
