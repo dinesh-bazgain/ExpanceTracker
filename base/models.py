@@ -18,7 +18,7 @@ class ExpenseIncome(models.Model):
         choices=transcation_choices
     )
 
-    tax = models.DecimalField(max_digits=10, decimal_places=3, default=0)
+    tax = models.DecimalField(max_digits=10, decimal_places=2, default=0)
 
     tax_type_choices = [
         ('flat', 'Flat'),
